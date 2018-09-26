@@ -222,7 +222,25 @@ h4.txt-link {
     }
 }
 
+/* unvisited link */
+a:link {
+    color: red;
+}
 
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
 /* @media screen and (max-width: 1064px) {
   img: max-width: 100%;
   h1.txt-hdr,  h2.txt-hdr, h3.txt-hdr {
