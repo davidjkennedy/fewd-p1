@@ -4,6 +4,12 @@
   margin: 0;
   padding: 0;
 }
+body {
+  min-width: 300px;
+  max-width: 1200px;
+  max-height: auto;
+  margin: 0 auto;
+}
 .container {
       display: flex;
       flex-wrap: wrap;
@@ -12,17 +18,17 @@
       margin: 0 auto;
       width: 90vw;
       max-width: 1080px;
+
 }
 .flex-item {
       flex: auto;
       width: 200px;
       margin: 1vw;
-      /* border: 1px solid red; */
-      /* padding: 1.4vw; */
 }
 .flex-item img {
       width: 100%;
       height: auto;
+
 }
 img {
   max-width: 100%;
@@ -38,6 +44,7 @@ header .flex-item {
   flex-direction: column;
   padding: 1em 0;
   border-bottom: 2px solid #2d3c49;
+  /* max-width: 1080px; */
 }
 header .logo {
   display: block;
@@ -60,15 +67,6 @@ header .heading-role {
     color: #2d3c49;
     margin-top: 1em;
     text-transform: uppercase;
-
-
-
-
-
-
-
-
-
 }
 main {
   /* border: 1px solid purple; */
@@ -90,14 +88,12 @@ section figure {
 }
 section .project-title {
   text-transform: uppercase;
-
-
 }
 section .project-link {
     font-weight: 200;
 }
 
-h1.txt-hdr, h3.txt-hdr {
+/* h1.txt-hdr, h3.txt-hdr {
   font-size: 8vw;
 }
 
@@ -109,10 +105,10 @@ h4.txt-hdr {
 }
 h4.txt-link {
   font-size: 3vw;
-}
+} */
 
 /* Desktop */
-@media screen and (min-width: 466px) {
+@media screen and (min-width: 300px) {
   header .flex-item {
     display: flex;
     flex-direction: row;
@@ -135,66 +131,75 @@ header .heading-title {
 section h2 {
   text-align: left;
 }
-
+/* name and Project Name */
 h1.txt-hdr, h3.txt-hdr {
+  font-size: 8vw;
+}
+/* Featured Project */
+h2.txt-hdr {
   font-size: 6vw;
 }
-
-h2.txt-hdr {
-  font-size:4vw;
-}
+/* Job Title */
 h4.txt-hdr {
-  font-size: 2.5vw;
+  font-size: 4vw;
 }
+/* Link Text */
 h4.txt-link {
-  font-size: 1.8vw;
+  font-size: 4vw;
 }
 
 }
-@media screen and (min-width: 715px) {
+@media screen and (min-width: 470px) {
+  /* name and Project Name */
+  h1.txt-hdr, h3.txt-hdr {
+    font-size: 5.6vw;
+  }
+  /* Featured Project */
+  h2.txt-hdr {
+    font-size: 4.4vw;
+  }
+  /* Job Title */
+  h4.txt-hdr {
+    font-size: 2.6vw;
+  }
+  /* Link Text */
+  h4.txt-link {
+    font-size: 2vw;
+  }
+}
 
+@media screen and (min-width: 720px) {
+  /* name and Project Name */
   h1.txt-hdr, h3.txt-hdr {
     font-size: 4vw;
   }
-
-  h2.txt-hdr {
-    font-size: 3.4vw;
-  }
-  h4.txt-hdr {
-    font-size: 2.2vw;
-  }
-  h4.txt-link {
-    font-size: 1.4vw;
-  }
-}
-
-@media screen and (min-width: 900px) {
-
-  h1.txt-hdr, h3.txt-hdr {
-    font-size: 3.5vw;
-  }
-
+  /* Featured Project */
   h2.txt-hdr {
     font-size: 3vw;
   }
+  /* Job Title */
   h4.txt-hdr {
-    font-size: 2vw;
+    font-size: 1.8vw;
   }
+  /* Link Text */
   h4.txt-link {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
   }
+
   @media screen and (min-width: 1200px) {
-
+    /* name and Project Name */
     h1.txt-hdr, h3.txt-hdr {
-      font-size: 3vw;
+      font-size: 2.4vw;
     }
-
+    /* Featured Project */
     h2.txt-hdr {
       font-size: 2.2vw;
     }
+    /* Job Title */
     h4.txt-hdr {
-      font-size: 2vw;
+      font-size: 1.4vw;
     }
+    /* Link Text */
     h4.txt-link {
       font-size: 1.2vw;
     }
@@ -222,8 +227,8 @@ a:active {
 .fade {
    opacity: 1;
    transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
+   /* -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out; */
    }
 
    .fade:hover {
